@@ -1,9 +1,10 @@
 import React from "react";
 import CollectionPreview from "../character/CollectionPreview";
+import Spinner from "../ui/Spinner";
 
 const CollectionItem = ({ items, isLoading }) => {
   return isLoading ? (
-    <h2>Loading...</h2>
+    <Spinner />
   ) : (
     <section className='cards'>
       {items.map((item) => (
